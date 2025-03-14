@@ -1,23 +1,39 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionText, SectionTitle, Link } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+  Link,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hey there,
+          I'm Faezeh,
         </SectionTitle>
         <SectionText>
-        I'm Vipul Jha, also known as lordarcadius. I'm an Android developer from Delhi, India with experience in ROMs, Kernels, & Scripts. Currently, I am working in Primebook as an Android Engineer. I'm passionate about contributing to open-source projects and helping the developer community on Facebook and Telegram.
+          I am Faezeh, an architect, interior designer, and artist with a strong
+          focus on innovative and environmentally conscious design. With a
+          Master’s degree in Architecture, I blend creativity with technical
+          expertise to craft unique spaces and artworks. Alongside my
+          architectural work, I am also a painter, expressing my artistic vision
+          through various mediums. I continuously refine my skills in
+          architectural modeling and digital visualization, using advanced
+          design tools to bring my ideas to life.
         </SectionText>
-        <Button onClick={(e) => {
-          e.preventDefault();
-          window.location.href = '/files/resume.pdf';
-        }}>My Resume</Button>
+        <Button
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/files/resume.pdf";
+          }}
+        >
+          My Resume
+        </Button>
       </LeftSection>
     </Section>
   </>

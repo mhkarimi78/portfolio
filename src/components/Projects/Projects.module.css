@@ -1,0 +1,21 @@
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  background-color: #4CAF50; /* رنگ پس‌زمینه */
+  color: white; /* رنگ متن */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px; /* گوشه‌های گرد */
+  transition: background-color 0.3s, transform 0.3s; /* انیمیشن */
+}
+
+.tabButton:hover {
+  background-color: #45a049; /* رنگ پس‌زمینه در حالت هاور */
+  transform: scale(1.05); /* بزرگ شدن دکمه */
+} 

@@ -1,8 +1,23 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Link } from '../../styles/GlobalComponents';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import React from "react";
+import {
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiFillFacebook,
+} from "react-icons/ai";
+import { Link } from "../../styles/GlobalComponents";
+import { SocialIcons } from "../Header/HeaderStyles";
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from "./FooterStyles";
 
 const Footer = () => {
   const today = new Date();
@@ -16,31 +31,32 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:hey@vipuljha.com">
-            hey@vipuljha.com
-          </LinkItem>
+          <LinkItem href="mailto:hey@vipuljha.com">hey@vipuljha.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Copyright &copy; {year} <Link href="https://www.vipuljha.com">  Vipul Jha</Link>. All rights reserved.</Slogan>
+          <Slogan>
+            Copyright &copy; {year}{" "}
+            <Link href="https://www.vipuljha.com"> Vipul Jha</Link>. All rights
+            reserved.
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/lordarcadius">
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/lordarcadius/">
+          <SocialIcons href="https://www.linkedin.com/in/sanazshamloo">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/lordarcadius">
+          <SocialIcons href="https://www.instagram.com/sanooz_/?hl=en">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.twitter.com/lordarcadius">
-            <AiFillTwitterCircle size="3rem" />
+          <SocialIcons href="https://www.youtube.com/@sanooz_">
+            <AiFillYoutube size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://www.facebook.com/sanoozz">
+            <AiFillFacebook size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
-
     </FooterWrapper>
   );
 };
