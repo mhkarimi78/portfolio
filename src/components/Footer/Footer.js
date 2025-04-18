@@ -35,13 +35,7 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan>
-            Copyright &copy; {year}{" "}
-            <Link href="https://www.vipuljha.com"> Vipul Jha</Link>. All rights
-            reserved.
-          </Slogan>
-        </CompanyContainer>
+        <CompanyContainer></CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://www.linkedin.com/in/sanazshamloo">
             <AiFillLinkedin size="3rem" />
