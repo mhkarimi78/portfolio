@@ -25,7 +25,7 @@ const Header = () => (
       >
         <img src="/logo.svg" height={40} width={40} alt="Logo" />{" "}
         <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
-          Vipul Jha
+          Faezeh
         </span>
       </Link>
     </Div1>
@@ -52,16 +52,32 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://www.youtube.com/@sanooz_" target="_blank" rel="noopener noreferrer">
+      <SocialIcons
+        href="https://www.youtube.com/@sanooz_"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillYoutube size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/sanazshamloo" target="_blank" rel="noopener noreferrer">
+      <SocialIcons
+        href="https://www.linkedin.com/in/sanazshamloo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/sanooz_/?hl=en" target="_blank" rel="noopener noreferrer">
+      <SocialIcons
+        href="https://www.instagram.com/sanooz_/?hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillInstagram size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.facebook.com/sanoozz" target="_blank" rel="noopener noreferrer">
+      <SocialIcons
+        href="https://www.facebook.com/sanoozz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillFacebook size="3rem" />
       </SocialIcons>
     </Div3>
