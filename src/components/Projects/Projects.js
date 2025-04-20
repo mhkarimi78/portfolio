@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import dynamic from 'next/dynamic';
 
 import {
   BlogCard,
@@ -18,12 +19,21 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import styles from "./Projects.module.css";
-import ProjectDetail from "./ProjectDetail";
+
+// Dynamically import ProjectDetail to ensure it's only loaded on the client side
+const ProjectDetail = dynamic(() => import('./ProjectDetail'), {
+  ssr: false
+});
 
 const Projects = () => {
   const [selectedType, setSelectedType] = useState("all");
   const [currentImageIndices, setCurrentImageIndices] = useState({});
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const filteredProjects =
     selectedType === "all"
@@ -31,6 +41,8 @@ const Projects = () => {
       : projects.filter((p) => p.type === selectedType);
 
   useEffect(() => {
+    if (!isClient) return;
+
     // Initialize current image indices for each project
     const initialIndices = {};
     filteredProjects.forEach((project, index) => {
@@ -40,6 +52,8 @@ const Projects = () => {
 
     // Set up intervals for each project
     const intervals = filteredProjects.map((project, projectIndex) => {
+      if (!project.images || project.images.length === 0) return null;
+      
       return setInterval(() => {
         setCurrentImageIndices((prevIndices) => ({
           ...prevIndices,
@@ -51,9 +65,9 @@ const Projects = () => {
 
     // Clean up intervals on unmount
     return () => {
-      intervals.forEach((interval) => clearInterval(interval));
+      intervals.forEach((interval) => interval && clearInterval(interval));
     };
-  }, [filteredProjects]);
+  }, [filteredProjects, isClient]);
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -62,6 +76,44 @@ const Projects = () => {
   const handleCloseDetail = () => {
     setSelectedProject(null);
   };
+
+  // Server-side rendering fallback
+  if (!isClient) {
+    return (
+      <Section id="projects">
+        <SectionDivider />
+        <SectionTitle main>Projects</SectionTitle>
+        <div className={styles.tabContainer}>
+          <button className={styles.tabButton}>All</button>
+          <button className={styles.tabButton}>Architecture</button>
+          <button className={styles.tabButton}>Painting</button>
+        </div>
+        <GridContainer>
+          {filteredProjects.map((p, i) => (
+            <BlogCard key={i}>
+              <div className={styles.slideshowContainer}>
+                {p.images?.[0] && (
+                  <Img src={p.images[0]} alt={p.title} />
+                )}
+              </div>
+              <HeaderThree title={p.title}>{p.title}</HeaderThree>
+              <Hr />
+              <CardInfo className="card-info">{p.description}</CardInfo>
+              <div>
+                <TitleContent>Tech Stack</TitleContent>
+                <Hr />
+                <TagList>
+                  {p.tags.map((t, i) => (
+                    <Tag key={i}>{t}</Tag>
+                  ))}
+                </TagList>
+              </div>
+            </BlogCard>
+          ))}
+        </GridContainer>
+      </Section>
+    );
+  }
 
   return (
     <Section id="projects">
@@ -94,7 +146,7 @@ const Projects = () => {
           return (
             <BlogCard key={i} onClick={() => handleProjectClick(p)} style={{ cursor: 'pointer' }}>
               <div className={styles.slideshowContainer}>
-                {p.images.map((image, imgIndex) => (
+                {(p.images || []).map((image, imgIndex) => (
                   <Img
                     key={imgIndex}
                     src={image}
