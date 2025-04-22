@@ -382,7 +382,7 @@ export const projects = [
       "Emotional Expression",
       "Painting",
     ],
-    images: ["/images/art/entanglement-liberation.jpg"],
+    images: ["/images/a1.jpg"],
     details: {
       year: 2024,
       medium: "Acrylic on Canvas",
@@ -402,7 +402,7 @@ export const projects = [
       "Emotional Expression",
       "Painting",
     ],
-    images: ["/images/art/explosion-of-silence.jpg"],
+    images: ["/images/a2.jpg"],
     details: {
       year: 2024,
       medium: "Acrylic on Canvas",
@@ -423,7 +423,7 @@ export const projects = [
       "Emotional Expression",
       "Painting",
     ],
-    images: ["/images/art/unstable-connection.jpg"],
+    images: ["/images/a3.jpg"],
     details: {
       year: 2024,
       medium: "Acrylic on Canvas",
@@ -444,7 +444,7 @@ export const projects = [
       "Modern Life",
       "Painting",
     ],
-    images: ["/images/art/modern-chaos.jpg"],
+    images: ["/images/a4.jpg"],
     details: {
       year: 2024,
       medium: "Acrylic on Canvas",
@@ -465,7 +465,7 @@ export const projects = [
       "Emotional Expression",
       "2023",
     ],
-    images: ["/images/art/rooted-in-the-sand.jpg"],
+    images: ["/images/a5.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -486,7 +486,7 @@ export const projects = [
       "Nostalgia",
       "2023",
     ],
-    images: ["/images/art/yellow-memory.jpg"],
+    images: ["/images/a6.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -507,7 +507,7 @@ export const projects = [
       "Time & Space",
       "2023",
     ],
-    images: ["/images/art/fracture-in-time.jpg"],
+    images: ["/images/a7.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -529,7 +529,7 @@ export const projects = [
       "Emotional Depth",
       "2023",
     ],
-    images: ["/images/art/weight-of-silence.jpg"],
+    images: ["/images/a8.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -543,7 +543,7 @@ export const projects = [
       "The flowing colors and fluid motion evoke a sense of movement and transformation. It feels as if the wind carries memories, reshaping them with every passing moment.",
     type: "painting",
     tags: ["Acrylic", "50×70 cm", "Abstract", "Movement", "Emotion", "2023"],
-    images: ["/images/art/wind-and-memory.jpg"],
+    images: ["/images/a9.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -565,7 +565,7 @@ export const projects = [
       "Transformation",
       "2023",
     ],
-    images: ["/images/art/rising-from-ashes.jpg"],
+    images: ["/images/a10.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -586,7 +586,7 @@ export const projects = [
       "Transition",
       "2023",
     ],
-    images: ["/images/art/the-passage.jpg"],
+    images: ["/images/a11.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -608,7 +608,7 @@ export const projects = [
       "Emotional Depth",
       "2023",
     ],
-    images: ["/images/art/chiaroscuro-of-solitude.jpg"],
+    images: ["/images/a12.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic on Canvas",
@@ -651,7 +651,7 @@ export const projects = [
       "Eyes",
       "Mixed Media",
     ],
-    images: ["/images/art/witnesses-of-silence.jpg"],
+    images: ["/images/13.jpg"],
     details: {
       year: 2021,
       medium: "Mixed Media on Canvas",
@@ -665,7 +665,7 @@ export const projects = [
       "It seems as if the boundary between reality and illusion is being torn apart. The figure, being drawn into the crimson curtain, represents an attempt to transcend the familiar and step into the unknown. This piece raises a question: What awaits beyond this veil—liberation or oblivion?",
     type: "painting",
     tags: ["Oil Painting", "Figurative", "Emotional", "Surreal", "Mystery"],
-    images: ["/images/liberation-or-lostness.jpg"],
+    images: ["/images/oil1.jpg"],
     details: {
       year: 2023,
       medium: "Oil on Canvas",
@@ -699,7 +699,7 @@ export const projects = [
       "A pair of classical oil paintings portraying feminine grace and poise. The first image captures a woman in an elegant pose with a glass of wine and cigarette, evoking a sense of noir nostalgia. The second depicts a dancer wrapped in a flowing red fabric, frozen in a moment of expressive movement. Executed in oil on canvas (100×80 cm), these works blend dramatic light, rich color, and timeless emotional presence.",
     type: "painting",
     tags: ["Oil Painting", "Classical", "Figurative", "Emotional", "Portrait"],
-    images: ["/images/classic-women.jpg"],
+    images: ["/images/11.jpg"],
     details: {
       year: 2023,
       medium: "Oil on Canvas",
@@ -713,7 +713,7 @@ export const projects = [
       "A curated set of contemporary artworks created for commercial and decorative spaces. These paintings blend abstraction, texture, and metallic elements to create visually striking compositions suitable for modern interiors. The use of gold foil, monochrome palettes, and rhythmic patterns invites elegance and energy into any setting. Mixed sizes and acrylic techniques make this a versatile and cohesive series.",
     type: "painting",
     tags: ["Acrylic", "Contemporary", "Abstract", "Commercial", "Decorative"],
-    images: ["/images/commercial-collection.jpg"],
+    images: ["/images/a1-1.jpg"],
     details: {
       year: 2023,
       medium: "Acrylic with Mixed Media",
