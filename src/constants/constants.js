@@ -629,7 +629,7 @@ export const projects = [
       "Cultural Identity",
       "2023",
     ],
-    images: ["/images/art/knots-of-identity.jpg"],
+    images: ["/images/111.jpg", "/images/112.jpg", "/images/113.jpg"],
     details: {
       year: 2023,
       medium: "Mixed Media on Persian Carpet",
